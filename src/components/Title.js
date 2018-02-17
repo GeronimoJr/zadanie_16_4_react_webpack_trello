@@ -1,18 +1,10 @@
 import React from 'react';
-import TodoForm from './TodoForm';
+import App from '../containers/App';
 
-class Title extends React.Component {
-    constructor(props){
-        super(props);
-    }
-
-    render() {
-        return(
-            <div>
-                <h1>Todo Board {this.props.counter}</h1>
-            </div>
-        );
-    }
-}
+const Title = (props) => (
+    <div>
+        <h1>Todo Board ({props.items.length})</h1>
+    </div>
+);
 
 export default Title;
