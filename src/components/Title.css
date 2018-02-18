@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+.title {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    color: #eb5302;
+    background-color: rgba(255,255,255,.2);
+    width: 100%;
+}
+.title h1 {
+    display: inline-block;
+    letter-spacing: 1px;
+    flex: 3;
+    margin-left: 50px;
+}
+.title h1 span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border: 1.3px solid silver;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.buttons {
+    display: inline-block;
+    flex: 2;
+}
+.btn {
+    width: 150px;
+    height: 50px;
+    background-color: rgba(214, 76, 2, 0.9);
+    color: white;
+    border: none;
+    transition: .3s;
+    border-radius: 30px;
+    margin-right: 30px;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.btn:hover {
+    -webkit-animation-name: jello;
+	animation-name: jello;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@keyframes jello {
+    from, 11.1%, to {
+      -webkit-transform: none;
+      transform: none;
+    }
+  
+    22.2% {
+      -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+      transform: skewX(-12.5deg) skewY(-12.5deg);
+    }
+  
+    33.3% {
+      -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+      transform: skewX(6.25deg) skewY(6.25deg);
+    }
+  
+    44.4% {
+      -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+      transform: skewX(-3.125deg) skewY(-3.125deg);
+    }
+  
+    55.5% {
+      -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+      transform: skewX(1.5625deg) skewY(1.5625deg);
+    }
+  
+    66.6% {
+      -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+      transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    }
+  
+    77.7% {
+      -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+      transform: skewX(0.390625deg) skewY(0.390625deg);
+    }
+  
+    88.8% {
+      -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+      transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    }
+}

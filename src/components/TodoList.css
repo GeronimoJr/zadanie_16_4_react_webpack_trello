@@ -1,9 +1,38 @@
-ul li {
-    list-style-type: none;
-    border: 1px solid black;
-    padding: 5px 5px;
-    margin-bottom: 10px;
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+.list {
     display: flex;
-    justify-content: space-between;
-    width: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 200px;
+    font-family: 'Pontano Sans', sans-serif;
+}
+.board {
+    border: 2px solid silver;
+    border-radius: 10px;
+    background-color: #212121f2;
+    padding: 15px 15px;
+    min-width: 200px;
+    max-width: 500px;
+    margin: 15px 15px;
+    position: relative;
+}
+.title {
+    text-align: center;
+    letter-spacing: 2px;
+}
+.title button {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #690000;
+    transition: .3s;
+}
+.title button:hover {
+    background-color: red;
+    cursor: pointer;
 }

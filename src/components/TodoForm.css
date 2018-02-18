@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+.todoForm {
+    font-family: 'Pontano Sans', sans-serif;
+}
+.taskForm {
+    margin-top: 150px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: inherit; 
+    overflow: auto; 
+    animation-name: animatetask;
+    animation-duration: 0.4s
+}
+@keyframes animatetask {
+    from {left: -300px; opacity: 0}
+    to {left: 0; opacity: 1}
+}
+@keyframes animatelist {
+    from {right: -300px; opacity: 0}
+    to {right: 0; opacity: 1}
+}
+.taskFormContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.listFormContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.listForm {
+    margin-top: 150px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: inherit;
+    overflow: auto; 
+    animation-name: animatelist;
+    animation-duration: 0.4s
+}
+.text {
+    display: inline-block;
+    width: 300px;
+    padding: 10px 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.select {
+    padding: 10px 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.submit {
+    width: 100px;
+    background-color: rgba(33, 33, 33, .7);
+    color: white;
+    border: none;
+    transition: .3s;
+    border-radius: 5px;
+}
+.submit:hover {
+    background-color: rgb(1, 151, 1);
+    cursor: pointer;
+}
