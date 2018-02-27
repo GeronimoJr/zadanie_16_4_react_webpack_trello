@@ -6,8 +6,8 @@ const Title = (props) => (
     <div className={style.title}>
         <h1><span>{props.items.length}</span> Todo Board</h1>
         <div className={style.buttons}>
-            <button id="btnForm" className={style.btn} onClick={props.listForm}>Add List</button>
-            <button id="btnTaskForm" className={style.btn} onClick={props.taskForm}>Add Task</button>
+            <button className={style.btn} onClick={props.showListForm}>Add List</button>
+            <button className={style.btn} onClick={props.showTaskForm}>Add Task</button>
         </div>
     </div>
 );

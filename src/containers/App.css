@@ -3,6 +3,7 @@ body {
     background-image: url('https://static.pexels.com/photos/23475/pexels-photo.jpg');
     background-size: cover;
     color: white;
+    overflow-x: hidden;
 }
 .TodoApp {
     display: flex;

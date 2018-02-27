@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 .title {
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -101,4 +101,11 @@
       -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
       transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
     }
+}
+
+@media all and (max-width: 480px) {
+  .title h1 {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }

@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 240px;
     font-family: 'Pontano Sans', sans-serif;
 }
 .board {
@@ -35,4 +35,11 @@
 .title button:hover {
     background-color: red;
     cursor: pointer;
+}
+
+@media all and (max-width: 480px) {
+    .list {
+        flex-direction: column;
+        margin-top: 350px;
+    }
 }
